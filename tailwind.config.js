@@ -62,7 +62,7 @@ module.exports = {
         'how-bg': "url('./assets/images/webp/how-bg-image.webp')",
         'menu-bg': "url('./assets/images/webp/menu-bg-image.webp')",
         'pizza-box': "url('./assets/images/webp/pizza-box-bg.webp')",
-
+        'pizzanomics-bg': "url('./assets/images/webp/pizzanomics-bg.webp')",
       },
 
       boxShadow: {

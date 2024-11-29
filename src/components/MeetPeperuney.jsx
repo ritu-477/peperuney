@@ -20,7 +20,7 @@ const MeetPeperuney = () => {
               <div className='w-full relative'>
                   <img className='absolute -top-28 left-0 sm:block hidden' src={meetCloud} alt="meet-image" />
                   <div className='lg:flex-row flex-col max-lg:flex-col-reverse flex gap-1 relative z-10'>
-                      <div className='lg:w-[44%] flex items-center ju'>
+                      <div className='lg:w-[44%] flex items-center justify-center'>
                           <img className='max-w-[580px] w-full max-sm:-mt-8' src={meetCartoon} alt="meet-cartoon" />
                       </div>
                       <div className='lg:w-[56%] w-full'>
