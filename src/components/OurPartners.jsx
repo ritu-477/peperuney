@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { OUR_PARTNERS } from '../common/Helper'
 import weWorkImg from '../assets/images/webp/we-work-with.webp'
 import CommonHeading from '../common/CommonHeading'
 
 const OurPartners = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            offset: 100,
+            once: true,
+        });
+    }, []);
+
   return (
-      <div className='bg-our-partners bg-cover bg-no-repeat bg-center lg:pt-[113px] pt-16 pb-[66px] lg:pb-[311px]'>
+      <div className='bg-our-partners bg-cover bg-no-repeat bg-center lg:pt-[113px] pt-16 pb-[66px] lg:pb-[311px]' id="meme">
           <div className='container'>
-              <div className='flex flex-col justify-center items-center max-w-[1200px] w-full mx-auto'>
+              <div data-aos="fade-up" className='flex flex-col justify-center items-center max-w-[1200px] w-full mx-auto'>
                   <CommonHeading className='text-center' text={'OUR PARTNERS'} />
                   <img src={weWorkImg} alt="work" className='lg:w-[444px] w-[250px] lg:pb-[120px] sm:pb-12 pb-4 sm:-mt-5 -mt-3' />
                   <div className='flex flex-wrap flex-row -mx-3 justify-center w-full'>

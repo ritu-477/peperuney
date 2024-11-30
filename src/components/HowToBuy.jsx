@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import howLayer from "../assets/images/webp/how-buy-layer.webp";
 import CommonHeading from "../common/CommonHeading";
 import howPeperuney from "../assets/images/webp/how-buy-peperuney.webp";
@@ -6,8 +8,16 @@ import pizzImg from "../assets/images/webp/pizza-image.webp";
 import { CARD_DATA_HOW } from '../common/Helper'
 
 const HowToBuy = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            offset: 100,
+            once: true,
+        });
+    }, []);
+
     return (
-        <div className="relative bg-white">
+        <div className="relative bg-white" id="how-to-buy">
             <img
                 className="absolute sm:top-[-190px] -top-[60px] w-full h-[69px] sm:h-[195px]"
                 src={howLayer}
@@ -15,7 +25,7 @@ const HowToBuy = () => {
             />
             <div className="flex justify-center flex-col items-center pb-10">
                 <CommonHeading
-                    className="text-center md:pt-[60px] pt-12"
+                    className="text-center pt-12"
                     text={"HOW TO BUY"}
                 />
                 <img
@@ -26,7 +36,7 @@ const HowToBuy = () => {
             </div>
             <div className="bg-how-bg bg-cover bg-no-repeat bg-center md:pt-[120px] pt-[86px] sm:pt-24 max-w-[1435px] mx-auto">
                 <div className="max-w-[1080px] w-full mx-auto px-5">
-                    <div className="flex md:flex-row lg:gap-7 gap-5 flex-col justify-center">
+                    <div data-aos="zoom-in" className="flex md:flex-row lg:gap-7 gap-5 flex-col justify-center">
                         {CARD_DATA_HOW.map((card, index) => (
                             <div
                                 key={card.id}
@@ -56,7 +66,7 @@ const HowToBuy = () => {
                         ))}
                     </div>
                 </div>
-                <img
+                <img data-aos="fade-up"
                     className="max-w-[1220px] w-full mx-auto max-md:pt-7"
                     src={pizzImg}
                     alt="pizza-image"

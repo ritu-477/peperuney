@@ -1,9 +1,19 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import CommonPeperuney from '../common/CommonPeperuney'
 import { ACCORDION_ITEMS } from '../common/Helper';
 import whatFaq from '../assets/images/webp/what-faq.webp'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Faq = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            offset: 100,
+            once: true,
+        });
+    }, []);
+
     const [activeIndex, setActiveIndex] = useState(0);
     const contentRefs = useRef([]);
 
@@ -14,10 +24,10 @@ const Faq = () => {
   return (
       <div className='flex flex-col'>
           <CommonPeperuney className='bg-green h-[76px] sm:h-[100px] flex items-center' />
-          <div className='bg-faq-bg bg-cover lg:bg-[length:100%_100%] bg-no-repeat bg-center py-14 sm:pt-[89px] sm:pb-[106px]'>
+          <div className='bg-faq-bg bg-cover lg:bg-[length:100%_100%] bg-no-repeat bg-center py-14 sm:pt-[89px] sm:pb-[106px]' id='faq'>
               <div className='container'>
                   <img className='sm:max-w-[530px] max-w-[280px] mx-auto text-center pb-4' src={whatFaq} alt="what-faq" />
-                  <div className='max-w-[687px] mx-auto'>
+                  <div data-aos="fade-up" className='max-w-[687px] mx-auto'>
                       {ACCORDION_ITEMS.map((item, index) => (
                           <div
                               key={index}

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import pizzaNomicsLayer from '../assets/images/webp/pizzanomics-layer.webp'
 import peperunryImg from '../assets/images/webp/pepe-runny-image.webp'
 import taxLayer from "../assets/images/webp/tax-layer.webp";
@@ -10,11 +12,19 @@ import dexTools from "../assets/images/webp/dex-tools.webp";
 import Icon from '../common/Icons'
 
 const Pizzanomics = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            offset: 100,
+            once: true,
+        });
+    }, []);
+    
     return (
         <div className='relative bg-crimson-red overflow-hidden'>
             <img className='sm:w-full max-w-[972px] w-[972px] relative z-10 object-contain sm:max-w-full' src={pizzaNomicsLayer} alt="pizzanomics-layer" />
             <p className='font-luckiest absolute left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-16 xl:left-20 top-[50px] sm:top-4 md:top-[30px] drop-shadow-[10.7px_-10.7px_0px_#FBDB81] text-[#893101] text-[60px] sm:text-[70px] lg:text-[110px] xl:text-[141px] leading-[100%] z-20'>PIZZANOMICS</p>
-            <div className='flex lg:flex-row flex-col-reverse justify-between gap-5'>
+            <div data-aos="zoom-out-up" className='flex lg:flex-row flex-col-reverse justify-between gap-5'>
                 <div className='relative z-10 lg:-mt-16 xl:-mt-20 lg:ml-[60px] xl:ml-[67px]'>
                     <img className='max-w-[301px] sm:max-w-[485px] w-full mx-auto lg:mx-0' src={peperunryImg} alt="peperunry-image" />
                 </div>
@@ -39,14 +49,14 @@ const Pizzanomics = () => {
             <div className='sm:bg-pizzanomics-bg bg-cover lg:bg-[length:100%_100%] bg-no-repeat bg-center max-sm:bg-mobile-view'>
                 <div className="sm:bg-tax-layer bg-mobile-layer bg-100 -mt-[207px] bg-cover bg-no-repeat bg-center min-h-[1190px] pt-[162px]">
                     <div className="flex flex-col lg:flex-row gap-7 sm:gap-12 xl:ml-auto px-5 xl:px-0 xl:mx-11 mx-auto xl:w-fit">
-                        <div className="max-w-[503px] w-full pt-7 mx-auto lg:mx-0 flex flex-col items-center">
+                        <div data-aos="slide-right" className="max-w-[503px] w-full pt-7 mx-auto lg:mx-0 flex flex-col items-center">
                             <img src={window} alt="window" className='w-full' />
                             <p className='font-luckiest mt-4 uppercase font-normal text-[52px] sm:text-custom-8xl text-center leading-[100%] text-white drop-shadow-[6px_6px_0px_#000000]'>bake to earn</p>
                             <button className='mt-5'><Icon className='transition duration-300 transform hover:scale-105' iconName='earn' /></button>
                         </div>
-                        <img src={pizza} alt="pizza" className='sm:max-w-[656px] max-w-[468px] mx-auto sm:w-full -ml-14 sm:mx-auto lg:mx-0' />
+                        <img data-aos="slide-left" src={pizza} alt="pizza" className='sm:max-w-[656px] max-w-[468px] mx-auto sm:w-full -ml-14 sm:mx-auto lg:mx-0' />
                     </div>
-                    <div className='max-sm:bg-pizzanomics-card bg-cover bg-no-repeat bg-center'>
+                    <div data-aos="fade-up" className='max-sm:bg-pizzanomics-card bg-cover bg-no-repeat bg-center'>
                         <div className="flex flex-wrap justify-center lg:flex-nowrap lg:flex-row mx-auto max-w-[1240px] w-full px-5 gap-10 xl:gap-[60px] mt-[220px] sm:mt-[246px] sm:pt-6 md:pt-0 lg:mt-[250px] pb-[75px] sm:pb-10">
                             <img src={coin} alt="coin" className='lg:w-[30%] md:w-[340px] w-[236px] object-contain h-[92px] sm:h-auto sm:w-[280px]' />
                             <img src={dexScreener} alt="dexScreener" className='lg:w-[30%] md:w-[340px] w-[236px] object-contain h-[92px] sm:h-auto sm:w-[280px]' />

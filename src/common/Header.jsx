@@ -106,20 +106,20 @@ const Header = () => {
                             <li className='flex gap-2 items-center'>
                                 {NAV_DATA_LINK.map((link, index) => (
                                     <li
-                                        className="bg-icon cursor-pointer bg-cover bg-no-repeat bg-center py-5 px-6 group transition-transform duration-300 transform hover:scale-105"
-                                        style={{ width: "77px", height: "67px" }}
-                                        key={index}
-                                        onClick={toggleMenu}
-                                    >
-                                        <a
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="transition-transform duration-300 flex items-center justify-center"
-                                            href={link.href}
-                                        >
-                                            <Icon className="size-8 transition-transform duration-300" iconName={link.icon} />
-                                        </a>
-                                    </li>
+    className="bg-icon cursor-pointer bg-cover bg-no-repeat bg-center py-5 px-6 group transition-transform duration-300 transform hover:scale-105"
+    style={{ width: "77px", height: "67px" }}
+    key={index}
+    onClick={toggleMenu}
+>
+    <a
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition-transform duration-300 flex items-center justify-center"
+        href={link.href}
+    >
+        <Icon className="size-8 transition-transform duration-300" iconName={link.icon} />
+    </a>
+</li>
                                 ))}
                             </li>
                         </ul>
@@ -145,10 +145,10 @@ const Header = () => {
                                     {SOCIAL_ICONS.map((icon) => (
                                         <li
                                             key={icon.name}
-                                            className="bg-menu-bg cursor-pointer bg-[length:100%_100%] h-[67px] w-[77px] bg-no-repeat bg-center py-5 px-4  transition-transform duration-300 transform hover:scale-105"
+                                            className="bg-menu-bg cursor-pointer bg-[length:100%_100%] h-[67px] w-[77px] bg-no-repeat bg-center py-5 px-4 group transition duration-300 transform hover:scale-105"
                                         >
-                                            <a className="flex justify-center transition duration-300" href={icon.href}>
-                                                <Icon className="size-8 transition duration-300" iconName={icon.name} />
+                                            <a className="flex justify-center transition duration-300 transform group-hover:scale-105" href={icon.href}>
+                                                <Icon className="size-8 transition duration-300 transform group-hover:scale-105" iconName={icon.name} />
                                             </a>
                                         </li>
                                     ))}

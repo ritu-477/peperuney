@@ -48,6 +48,7 @@ module.exports = {
         'transparent-brown': "#3030304D",
         'crimson-red': "#DA291C",
         'burnt-orange': "#893101",
+        'gray': "#8b8581",
       },
 
       backgroundImage: {
