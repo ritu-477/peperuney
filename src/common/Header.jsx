@@ -95,7 +95,7 @@ const Header = () => {
                                                 <a
                                                     key={option.id}
                                                     href={option.href}
-                                                    className="block px-1 py-2 lg:text-lg max-w-[171.94px] leading-custom-lg text-base text-primary-white hover:bg-black rounded-lg">
+                                                    className="block px-1 py-2 lg:text-lg max-w-[171.94px] leading-custom-lg text-base text-primary-white hover:bg-white rounded-lg">
                                                     {option.label}
                                                 </a>
                                             ))}
