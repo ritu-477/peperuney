@@ -11,3 +11,15 @@
 .nav-gradient{
     background: linear-gradient(180deg, #FFFFFF 70.94%, rgba(255, 255, 255, 0) 100%);
 }
+
+@media(max-width:639.99px){
+.click-bg {
+        background: linear-gradient(180deg, #7C4C01 80.5%, rgba(226, 139, 2, 0) 100%);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .bg-100 {
+        background-size: 100% 100%;
+    }
+}

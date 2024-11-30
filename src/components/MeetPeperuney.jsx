@@ -1,6 +1,6 @@
 import React from 'react'
 import meetLayer from '../assets/images/webp/meet-layer.webp'
-import meetSmaalLayer from '../assets/images/webp/meet-small-layer.png'
+import meetSmaalLayer from '../assets/images/webp/meet-small-layer.webp'
 import meetCartoon from '../assets/images/webp/meet-cartoon-image.webp'
 import CommonHeading from '../common/CommonHeading'
 import CommonPara from '../common/CommonPara'

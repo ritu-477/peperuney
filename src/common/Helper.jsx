@@ -1,4 +1,7 @@
-import Icon from "../common/Icons";
+import Icon from '../common/Icons'
+import strakeImg from '../assets/images/webp/stake-image.webp'
+import meteoraImg from '../assets/images/webp/meteora-image.webp'
+import kreatorImg from '../assets/images/webp/kreator-ai.webp'
 
 export const NAV_DATA_LINK = [
     { icon: 'twitter', href: "https://x.com/i/flow/login" },
@@ -7,10 +10,9 @@ export const NAV_DATA_LINK = [
 ];
 
 export const DROPDOWN_DATA = [
-    { id: 1, label: "Smart Routing", href: "#smart-routing" },
-    { id: 2, label: "Universal API", href: "#universal-api" },
-    { id: 3, label: "LLM Observability", href: "#llm-observability" },
-    { id: 4, label: "AI Compliance", href: "#ai-compliance" },
+    { id: 1, label: "About", href: "#smart-routing" },
+    { id: 2, label: "How To Buy", href: "#universal-api" },
+    { id: 3, label: "Faq", href: "#llm-observability" }
 ];
 
  export const CARD_DATA_HOW = [
@@ -21,7 +23,8 @@ export const DROPDOWN_DATA = [
             "Set up Phantom Wallet and connect it to Solana. Make sure Solana’s locked and loaded as the active network.",
         width: "322px",
         extraContent: null,
-    },
+     },
+    
     {
         id: 2,
         title: "FUND YOUR WALLET",
@@ -38,7 +41,8 @@ export const DROPDOWN_DATA = [
                 </div>
             </div>
         ),
-    },
+     },
+    
     {
         id: 3,
         title: "GRAB THAT $PepeRuney",
@@ -61,4 +65,43 @@ export const SOCIAL_ICONS = [
     { name: "twitter", href: "https://x.com/i/flow/login" },
     { name: "telegram", href: "https://web.telegram.org/a/" },
     { name: "discord", href: "https://discord.com/" },
+];
+
+export const OUR_PARTNERS = [
+    {
+        image: strakeImg,
+    },
+    {
+        image: meteoraImg,
+    },
+    {
+        image: kreatorImg,
+    },
+];
+
+export const ACCORDION_ITEMS = [
+    {
+        title: 'How does the burn mechanism work?',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+    },
+
+    {
+        title: 'How can I get ivolved in the community?',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+    },
+
+    {
+        title: 'How does multi-chain aspect of $%Peperuney work',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+    },
+
+    {
+        title: 'What is the Pizzaruney Arcade?',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+    },
+
+    {
+        title: 'Wen Airdrops?',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+    },
 ];

@@ -1,6 +1,6 @@
 import React from 'react'
 import Icon from '../common/Icons'
-import allImg from '../assets/images/webp/all-man.png'
+import allImg from '../assets/images/webp/all-man.webp'
 import CommonPeperuney from '../common/CommonPeperuney'
 
 export const BuyPepruney = () => {
