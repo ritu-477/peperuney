@@ -130,7 +130,7 @@ const Header = () => {
                             ref={menuRef}>
                             <ul className="flex flex-col z-10 gap-6 mt-24">
                                 {HEADER_NAV_ITEMS.map((item) => (
-                                    <li key={item.label}>
+                                    <li key={item.label} onClick={toggleMenu}>
                                         <a
                                             className={`font-normal main-heading font-luckiest [text-shadow:_4px_4px_0_black] text-custom-5xl transition hover:text-red duration-300 leading-custom-6xl ${item.textColor}`}
                                             href={item.href}>
