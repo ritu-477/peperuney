@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Icon from '../common/Icons'
 import allImg from '../assets/images/webp/all-man.webp'
-import CommonPeperuney from '../common/CommonPeperuney'
+import CommonPeperuney from '../common/Peperuney'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -27,6 +27,6 @@ export const BuyPepruney = () => {
         </div>
       </div>
       <CommonPeperuney className='sm:h-[271px] h-[140px] pt-[30px] border-b-0' bgColor="bg-green" />
-      </div>
+    </div>
   )
 }

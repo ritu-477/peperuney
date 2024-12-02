@@ -2,10 +2,11 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import howLayer from "../assets/images/webp/how-buy-layer.webp";
-import CommonHeading from "../common/CommonHeading";
+import CommonHeading from "../common/Heading";
 import howPeperuney from "../assets/images/webp/how-buy-peperuney.webp";
 import pizzImg from "../assets/images/webp/pizza-image.webp";
 import { CARD_DATA_HOW } from '../common/Helper'
+// import Icon from '../common/Icons'
 
 const HowToBuy = () => {
     useEffect(() => {
@@ -15,7 +16,7 @@ const HowToBuy = () => {
             once: true,
         });
     }, []);
-
+    
     return (
         <div className="relative bg-white" id="how-to-buy">
             <img
@@ -44,8 +45,9 @@ const HowToBuy = () => {
                                     } ${index === 1 ? "" : "md:pt-[170px] pt-6"}`}
                             >
                                 <div
-                                    className={`p-4 bg-white border-4 border-black ${card.extraContent ? "xl:w-[322px]" : "xl:w-[322px] lg:w-[308px]"
+                                    className={`p-4 bg-white border-4 border-black ${card.extraContent ? "xl:w-[322px] lg:w-[285px]" : "xl:w-[322px] lg:w-[285px]"
                                         }`}
+                                    
                                 >
                                     <div className="flex justify-center -mt-[60px]">
                                         <div className="bg-black rotate-[-5deg] px-4 py-3 flex justify-center items-center">
@@ -54,10 +56,10 @@ const HowToBuy = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <h5 className="lg:text-custom-4xl text-custom-2xl leading-7 lg:leading-10 lg:max-w-[282px] font-luckiest font-normal text-center mx-auto pt-3">
+                                    <h5 className="xl:text-custom-4xl lg:text-custom-2xl lg:leading-7 md:text-xl md:leading-5 text-custom-2xl leading-7 xl:leading-10 lg:max-w-[282px] font-luckiest font-normal text-center mx-auto pt-3">
                                         {card.title}
                                     </h5>
-                                    <p className="font-normal font-schoolbell text-lg text-center pt-[10px]">
+                                    <p className="font-normal font-schoolbell md:text-base lg:text-lg text-lg text-center pt-[10px]">
                                         {card.description}
                                     </p>
                                 </div>

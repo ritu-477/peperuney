@@ -45,7 +45,7 @@ const Header = () => {
     }, [isMenuOpen]);
 
     return (
-        <div className="md:h-[75px] sm:h-16 h-14 flex w-full items-center pt-[30px] relative z-20">
+        <div className="md:h-[75px] sm:h-16 h-14 flex w-full items-center pt-[50px] relative z-20">
             <div className='container'>
                 <div className='flex justify-between items-center'>
                     <ul className='lg:hidden block'>

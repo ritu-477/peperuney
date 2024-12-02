@@ -74,6 +74,7 @@ module.exports = {
         'join-mobile': "url('./assets/images/webp/join-mobile-bg.webp')",
         'room-layer': "url('./assets/images/webp/living-room-tv.webp')",
         'room-mobile': "url('./assets/images/webp/earn-and-arcade.webp')",
+        'card-pizzanomics': "url('./assets/images/webp/cards-pizzanomics-bg.webp')",
       },
 
       boxShadow: {

@@ -26,7 +26,7 @@ const JoinTheCult = () => {
                 key={icon.name}
                 className="bg-menu-bg cursor-pointer bg-[length:100%_100%] h-[87px] flex justify-center items-center w-[100px] bg-no-repeat bg-center py-5 px-4  transition-transform duration-300 transform hover:scale-105"
               >
-                <a className="flex justify-center transition duration-300" href={icon.href}>
+                <a target="blank" className="flex justify-center transition duration-300" href={icon.href}>
                   <Icon className="size-8 transition duration-300" iconName={icon.name} />
                 </a>
               </div>
