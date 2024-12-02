@@ -75,6 +75,8 @@ module.exports = {
         'room-layer': "url('./assets/images/webp/living-room-tv.webp')",
         'room-mobile': "url('./assets/images/webp/earn-and-arcade.webp')",
         'card-pizzanomics': "url('./assets/images/webp/cards-pizzanomics-bg.webp')",
+        'hero-mobile-view': "url('./assets/images/webp/hero-mobile-bg.webp')",
+
       },
 
       boxShadow: {
