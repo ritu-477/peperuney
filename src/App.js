@@ -9,6 +9,8 @@ import Faq from './components/Faq'
 import Pizzanomics from './components/Pizzanomics'
 import JoinTheCult from './components/JoinTheCult';
 import PeperuneyToons from './components/PeperuneyToons';
+import Footer from './common/Footer';
+import PeperuneyMeme from './components/PeperuneyMeme';
 
 function App() {
   return (
@@ -21,8 +23,10 @@ function App() {
       <ClickToEarn />
       <PeperuneyToons/>
       <OurPartners />
+      <PeperuneyMeme/>
       <Faq />
-      <JoinTheCult/>
+      <JoinTheCult />
+      <Footer/>
     </div>
   );
 }

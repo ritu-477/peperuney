@@ -2,7 +2,6 @@ import Icon from '../common/Icons'
 import strakeImg from '../assets/images/webp/stake-image.webp'
 import meteoraImg from '../assets/images/webp/meteora-image.webp'
 import kreatorImg from '../assets/images/webp/kreator-ai.webp'
-import flagUSA from '../assets/images/svg/flag-image.svg'
 
 export const NAV_DATA_LINK = [
     { icon: 'twitter', href: "https://x.com/i/flow/login" },
@@ -11,42 +10,28 @@ export const NAV_DATA_LINK = [
 ];
 
 export const DROPDOWN_DATA = [
-    { id: 1, label: "English", flag: flagUSA },
-    { id: 2, label: "Hindi", flag: flagUSA },
+    { id: 1, label: "English"},
+    { id: 2, label: "Hindi" },
 ];
         
- export const CARD_DATA_HOW = [
+export const CARD_DATA_HOW = [
     {
         id: 1,
         title: "GET YOUR WALLET READY",
         description:
             "Set up Phantom Wallet and connect it to Solana. Make sure Solana’s locked and loaded as the active network.",
-        extraContent: null,
-     },
-    
+    },
     {
         id: 2,
         title: "FUND YOUR WALLET",
         description:
             "Load up on SOL from Coinbase, Binance, or OKX. Double-check your wallet address—no room for slip-ups.",
-        extraContent: (
-            <div className="p-3 bg-white border-4 lg:flex hidden border-black mt-9 gap-3 items-center w-full max-w-[342px]">
-                <p className="font-schoolbell text-lg text-nowrap">
-                    CA: 0x93jr98fo2ihf89hf0o82hf0ohi9f0
-                </p>
-                <div className="size-8 bg-black flex items-center justify-center">
-                    <Icon iconName="solarCopy" />
-                </div>
-            </div>
-        ),
-     },
-    
+    },
     {
         id: 3,
         title: "GRAB THAT $PepeRuney",
         description:
             "Hit up a Solana DEX like Meteora or Jupiter, swap your SOL for $PepeRuney, and lock it in. Hell yeah!",
-        extraContent: null,
     },
 ];
 

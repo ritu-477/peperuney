@@ -76,6 +76,8 @@ module.exports = {
         'room-mobile': "url('./assets/images/webp/earn-and-arcade.webp')",
         'card-pizzanomics': "url('./assets/images/webp/cards-pizzanomics-bg.webp')",
         'hero-mobile-view': "url('./assets/images/webp/hero-mobile-bg.webp')",
+        'peperuney-meme': "url('./assets/images/webp/peperuney-meme-bg.webp')",
+        'mobile-meme': "url('./assets/images/webp/meme-mobile-bg.webp')",
 
       },
 

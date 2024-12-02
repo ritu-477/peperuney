@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import meetLayer from '../assets/images/webp/meet-layer.webp'
 import meetSmaalLayer from '../assets/images/webp/meet-small-layer.webp'
 import meetCartoon from '../assets/images/webp/meet-cartoon-image.webp'
-import CommonHeading from '../common/Heading'
+import Heading from '../common/Heading'
 import Description from '../common/Description'
 import Icon from '../common/Icons'
 import pizzaGuy from '../assets/images/webp/pizza-guy.webp'
@@ -34,7 +34,7 @@ const MeetPeperuney = () => {
                             <img className='max-w-[580px] w-full max-sm:-mt-8' src={meetCartoon} alt="meet-cartoon" />
                         </div>
                         <div data-aos="fade-left" className='lg:w-[56%] w-full'>
-                            <CommonHeading className='text-center lg:pb-3 sm:pb-6' text={'MEET PEPERUNEY'} />
+                            <Heading className='text-center lg:pb-3 sm:pb-6' text={'MEET PEPERUNEY'} />
                             <div className='sm:bg-meet-vector max-sm:bg-meet-small bg-[length:100%_100%] bg-no-repeat bg-center sm:px-7 sm:py-10 px-3'>
                                 <div className='flex justify-center sm:-mt-16 xl:-mt-20'><img className='lg:max-w-[332px] sm:max-w-[195px] max-w-[0] max-sm:h-[77px] w-full' src={pizzaGuy} alt="pizza-guy" /></div>
                                 <div className='sm:ps-8 ps-4'>
