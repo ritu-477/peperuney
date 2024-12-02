@@ -14,11 +14,14 @@ const JoinTheCult = () => {
       offset: 100,
       once: true,
     });
-  }, []);
+  }, []); 
+
 
   return (
+    <div className="flex flex-col">
+      <div className="border-t-4 border-b-4 border-black bg-gray w-full h-[39px]"></div>
       <div className='sm:bg-join-bg bg-cover lg:bg-[length:100%_100%] bg-no-repeat bg-center max-sm:bg-join-mobile sm:pt-[100px] pt-[60px] md:pt-[140px] pb-[91px] max-sm:h-[850px]'>
-      <div data-aos="zoom-in" className='max-w-[674px] mx-auto'>
+        <div data-aos="zoom-in" className='max-w-[674px] mx-auto'>
           <img className='md:max-w-[670px] sm:max-w-[500px] mx-auto max-sm:max-w-[350px]' src={joinCult} alt="join-cult" />
           <div className='flex justify-center items-center gap-4 pt-5'>
             {SOCIAL_ICONS.map((icon) => (
@@ -31,13 +34,14 @@ const JoinTheCult = () => {
                 </a>
               </div>
             ))}
-                </div>
+          </div>
         </div>
-      <div data-aos="fade-right" className='sm:block hidden'>
+        <div data-aos="fade-right" className='sm:block hidden'>
           <img className='max-w-[671px] w-full mx-auto' src={joinMen} alt="join-men-image" />
+        </div>
+        <BackToTop />
       </div>
-      <BackToTop/>
-    </div>
+     </div>
   )
 }
 

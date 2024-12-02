@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import Peperuney from '../common/Peperuney'
+import PeperuneySlider from '../common/PeperuneySlider'
 import { ACCORDION_ITEMS } from '../common/Helper';
 import whatFaq from '../assets/images/webp/what-faq.webp'
 import AOS from "aos";
@@ -23,7 +23,7 @@ const Faq = () => {
 
     return (
         <div className='flex flex-col'>
-            <Peperuney className='bg-green h-[76px] sm:h-[100px] flex items-center' />
+            <PeperuneySlider className='bg-green h-[76px] sm:h-[100px] flex items-center' />
             <div className='bg-faq-bg bg-cover lg:bg-[length:100%_100%] bg-no-repeat bg-center py-14 sm:pt-[89px] sm:pb-[106px]' id='faq'>
                 <div className='container'>
                     <img className='sm:max-w-[530px] max-w-[280px] mx-auto text-center pb-4' src={whatFaq} alt="what-faq" />

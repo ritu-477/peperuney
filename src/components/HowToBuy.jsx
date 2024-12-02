@@ -6,7 +6,6 @@ import CommonHeading from "../common/Heading";
 import howPeperuney from "../assets/images/webp/how-buy-peperuney.webp";
 import pizzImg from "../assets/images/webp/pizza-image.webp";
 import { CARD_DATA_HOW } from '../common/Helper'
-// import Icon from '../common/Icons'
 
 const HowToBuy = () => {
     useEffect(() => {

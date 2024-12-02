@@ -29,7 +29,7 @@ const Pizzanomics = () => {
                     <img className='max-w-[301px] sm:max-w-[420px] xl:max-w-[485px] w-full mx-auto lg:mx-0' src={peperunryImg} alt="peperunry-image" />
                 </div>
                 <div className="xl:max-w-[812px] lg:w-full -mx-5 lg:mx-0">
-                    <div className='bg-black relative -rotate-3 w-full h-[341px] pb-10 sm:pb-11 flex justify-center items-end xl:-mt-[240px]-mt-[237px] sm:-mt-[225px] lg:-mt-[260px]'>
+                    <div className='bg-black relative -rotate-3 w-full h-[341px] pb-10 sm:pb-11 flex justify-center items-end xl:-mt-[240px] -mt-[237px] sm:-mt-[225px] lg:-mt-[260px]'>
                         <p className='font-luckiest font-normal text-[70px] sm:text-[80px] md:text-[85px] xl:text-[135px] leading-[100%] text-white uppercase mb-0.5'>42 BILLION</p>
                     </div>
                     <p className='font-luckiest text-4xl sm:text-custom-8xl sm:leading-custom-8xl font-normal text-white relative mt-5 -rotate-3 text-center'>token supply</p>

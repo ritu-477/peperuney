@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import Header from '../common/Header'
 import heroImg from '../assets/images/webp/hero-image.webp'
 import bikeImg from '../assets/images/webp/bike-image.webp'
-import Peperuney from '../common/Peperuney'
+import PeperuneySlider from '../common/PeperuneySlider'
 import smallBikeImg from '../assets/images/webp/small-bike.webp'
 
 export const Hero = () => {
@@ -24,7 +24,7 @@ export const Hero = () => {
         <img data-aos="fade-right" className='w-full sm:block hidden' src={bikeImg} alt="bike-image" />
         <img data-aos="fade-right" className='w-full sm:hidden h-[262px]' src={smallBikeImg} alt="bike-image" />
       </div>
-      <Peperuney className='bg-crimson-red h-[76px] sm:h-[100px] flex items-center' />
+      <PeperuneySlider className='bg-crimson-red h-[76px] sm:h-[100px] flex items-center' />
     </div>
   )
 }

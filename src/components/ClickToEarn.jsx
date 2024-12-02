@@ -4,7 +4,7 @@ import CommonHeading from '../common/Heading'
 import casinoImg from '../assets/images/webp/casino-logo.webp'
 import Description from '../common/Description'
 import Icon from '../common/Icons'
-import Peperuney from '../common/Peperuney'
+import PeperuneySlider from '../common/PeperuneySlider'
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -19,8 +19,8 @@ const ClickToEarn = () => {
 
   return (
     <div className='flex flex-col'>
-      <Peperuney className='bg-crimson-red h-[76px] sm:h-[100px] flex items-center' />
-      <div className='sm:bg-click-bg bg-cover bg-no-repeat bg-center relative max-sm:bg-click-small max-sm:h-[1247px]' id="arcade">
+      <PeperuneySlider className='bg-crimson-red h-[76px] sm:h-[100px] flex items-center' />
+      <div className='sm:bg-click-bg bg-cover bg-no-repeat bg-center relative max-sm:bg-click-small max-sm:h-[1430px]' id="arcade">
         <img className='lg:max-w-[388px] sm:max-w-[279px] md:max-w-[300px] sm:block hidden absolute left-0 bottom-0' src={clickImg} alt="click-image" />
         <div className='container sm:pt-[100px] pt-[60px] relative z-10 pb-[128px] justify-center items-center flex lg:items-end lg:justify-end'>
           <div data-aos="fade-up" className='sm:max-w-[682px] w-full'>
