@@ -17,8 +17,8 @@ const PeperuneyMeme = () => {
                 <img className='sm:max-w-[250px] max-w-[184px] text-center -mt-1' src={galleryImg} alt="gallery-image" />
             </div>
             <img className='max-w-[678px] sm:block hidden w-full absolute bottom-0 left-0' src={memeMen} alt="meme-men" />
-            <div className='lg:pt-[207px] sm:pt-5 flex lg:gap-[100px] gap-12 sm:pb-[151px] 2xl:mx-auto 2xl:max-w-[1920px] w-full'>
-                <div className='lg:ps-[211px] md:flex hidden sm:ps-32 relative z-20 max-w-[555px] justify-center items-center flex-col'>
+            <div className='lg:pt-[207px] sm:pt-5 flex lg:gap-[70px] xl:gap-[100px] gap-12 sm:pb-[151px] 2xl:mx-auto 3xl:max-w-[1920px] w-full 3xl:justify-between'>
+                <div className='xl:ps-[211px] lg:ps-[150px] md:flex hidden sm:ps-32 relative z-20 max-w-[555px] justify-center items-center flex-col'>
                     <Heading className='max-w-[555px] text-center' text={'PEPERUNEY MEME'} />
                     <img className='sm:max-w-[250px] max-w-[184px] text-center -mt-[18px]' src={galleryImg} alt="gallery-image" />
                 </div>
