@@ -58,10 +58,10 @@ const Header = () => {
                         <li className="relative z-[15]">
                             <a
                                 onClick={toggleDropdown}
-                                className="gap-3 relative cursor-not-allowed text-white lg:text-2xl hover:text-black text-lg font-luckiest flex items-center space-x-1 after:absolute ease-in-out duration-300"
+                                className="gap-3 relative text-white lg:text-2xl hover:text-black text-lg font-luckiest flex items-center space-x-1 after:absolute ease-in-out duration-300"
                                 href="#"
                             >
-                                <img src={flagImg} alt="flag-image" className="w-[41px] h-[31px] cursor-not-allowed" />
+                                <img src={flagImg} alt="flag-image" className="w-[41px] h-[31px]" />
                                 <span>
                                     <Icon className='cursor-pointer' iconName="dropdown" />
                                 </span>
@@ -96,10 +96,10 @@ const Header = () => {
                             <li className="relative z-[15]">
                                 <a
                                     onClick={toggleDropdown}
-                                    className="gap-3 relative cursor-not-allowed text-white lg:text-2xl hover:text-black text-lg font-luckiest flex items-center space-x-1 after:absolute ease-in-out duration-300"
+                                    className="gap-3 relative text-white lg:text-2xl hover:text-black text-lg font-luckiest flex items-center space-x-1 after:absolute ease-in-out duration-300"
                                     href="#"
                                 >
-                                    <img src={flagImg} alt="flag-image" className="w-[41px] h-[31px] cursor-not-allowed" />
+                                    <img src={flagImg} alt="flag-image" className="w-[41px] h-[31px]" />
                                     <span>
                                         <Icon className='cursor-pointer' iconName="dropdown" />
                                     </span>

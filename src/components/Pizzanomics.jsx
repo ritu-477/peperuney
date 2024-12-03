@@ -13,7 +13,7 @@ import Icon from '../common/Icons'
 const Pizzanomics = () => {
     
     return (
-        <div className='relative bg-crimson-red overflow-hidden'>
+        <div className='relative bg-crimson-red overflow-hidden max-w-[1440px] mx-auto'>
             <img className='sm:w-full max-w-[972px] w-[972px] relative z-10 object-contain sm:max-w-full' src={pizzaNomicsLayer} alt="pizzanomics-layer" />
             <p className='font-luckiest absolute left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-16 xl:left-20 top-[50px] sm:top-4 md:top-[30px] drop-shadow-[10.7px_-10.7px_0px_#FBDB81] text-burnt-orange text-[60px] sm:text-[70px] lg:text-[90px] xl:text-[141px] leading-[100%] z-20'>PIZZANOMICS</p>
             <div data-aos="zoom-out-up" className='flex lg:flex-row flex-col-reverse justify-between gap-5'>
@@ -27,7 +27,6 @@ const Pizzanomics = () => {
                     <p className='font-luckiest text-4xl sm:text-custom-8xl sm:leading-custom-8xl font-normal text-white relative my-5 -rotate-3 text-center'>token supply</p>
                 </div>
             </div>
-
             <div className="flex flex-col lg:flex-row justify-between relative lg:-mt-4">
                 <div className="bg-black -rotate-[4deg] -mx-7 xl:h-[111px] lg:w-[630px] px-7 my-auto relative z-10">
                     <p className='text-white font-luckiest font-normal text-[52px] sm:text-[75px] xl:text-[92px] text-center lg:text-left lg:ml-11 leading-[100%] text-nowrap mb-12 lg:mb-2.5 my-2.5'>LP BURNED</p>

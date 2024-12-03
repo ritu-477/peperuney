@@ -10,7 +10,7 @@ const JoinTheCult = () => {
   return (
     <div className="flex flex-col">
       <div className="border-t-4 border-b-4 border-black bg-gray w-full h-[39px]"></div>
-      <div className='sm:bg-join-bg bg-cover lg:bg-[length:100%_100%] bg-no-repeat bg-center max-sm:bg-join-mobile max-sm:bg-[length:100%_100%] sm:pt-[100px] pt-[60px] md:pt-[140px] pb-[91px] max-sm:h-[850px]'>
+      <div className='sm:bg-join-bg bg-cover lg:bg-[length:100%_100%] bg-no-repeat bg-center max-sm:bg-join-mobile max-sm:bg-[length:100%_100%] sm:pt-[100px] pt-[60px] md:pt-[140px] pb-[578px] max-sm:h-[850px] relative'>
         <div data-aos="zoom-in" className='max-w-[674px] mx-auto'>
           <img className='md:max-w-[670px] sm:max-w-[500px] mx-auto max-sm:max-w-[371px]' src={joinCult} alt="join-cult" />
           <div className='flex justify-center items-center gap-4 pt-5'>
@@ -26,8 +26,8 @@ const JoinTheCult = () => {
             ))}
           </div>
         </div>
-        <div data-aos="fade-right" className='sm:block hidden'>
-          <img className='max-w-[671px] w-full mx-auto' src={joinMen} alt="join-men-image" />
+        <div data-aos="fade-right" className='sm:block hidden absolute xl:top-[37%] xl:left-[30%] lg:top-[49%] lg:left-[30%] 3xl:top-[29%] 3xl:left-[34%] left-[15%] top-[39%]'>
+          <img className='xl:max-w-[671px] 3xl:max-w-[800px] lg:max-w-[500px] max-w-[620px] w-full mx-auto' src={joinMen} alt="join-men-image" />
         </div>
       </div>
      </div>
