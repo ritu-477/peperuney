@@ -5,6 +5,7 @@ import { DROPDOWN_DATA } from '../common/Helper';
 import { HEADER_NAV_ITEMS, SOCIAL_ICONS, NAV_DATA_LINK } from '../common/Helper'
 
 const Header = () => {
+    const [selectedLanguage, setSelectedLanguage] = useState("ENG");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const dropdownRef = useRef(null);
@@ -22,6 +23,11 @@ const Header = () => {
         if (dropdownRef.current && !dropdownRef.current.contains(event.target) && !menuRef.current.contains(event.target)) {
             setIsDropdownOpen(false);
         }
+    };
+
+    const handleLanguageChange = (value) => {
+        setSelectedLanguage(value);
+        setIsDropdownOpen(false); 
     };
 
     useEffect(() => {
@@ -52,21 +58,30 @@ const Header = () => {
                         <li className="relative z-[15]">
                             <a
                                 onClick={toggleDropdown}
-                                className="gap-3 relative text-white lg:text-2xl hover:text-black text-lg font-luckiest flex items-center space-x-1 cursor-pointer after:absolute ease-in-out duration-300"
-                                href="#">
-                                <img src={flagImg} alt="flag-image" />
+                                className="gap-3 relative cursor-not-allowed text-white lg:text-2xl hover:text-black text-lg font-luckiest flex items-center space-x-1 after:absolute ease-in-out duration-300"
+                                href="#"
+                            >
+                                <img src={flagImg} alt="flag-image" className="w-[41px] h-[31px] cursor-not-allowed" />
                                 <span>
-                                    <Icon iconName="dropdown" />
+                                    <Icon className='cursor-pointer' iconName="dropdown" />
                                 </span>
                                 {isDropdownOpen && (
                                     <span
-                                        className="absolute w-[182px] left-0 top-3 px-2 pt-[14px] pb-2 mt-7 bg-red border border-white rounded-xl z-30"
-                                        ref={dropdownRef}>
+                                        className="absolute w-[140px] left-0 top-3 px-2 pt-[14px] pb-2 mt-7 bg-white border border-black rounded-xl z-30"
+                                        ref={dropdownRef}
+                                    >
                                         {DROPDOWN_DATA.map((option) => (
                                             <a
+                                                target="_blank"
                                                 key={option.id}
                                                 href={option.href}
-                                                className="block px-1 py-2 lg:text-lg max-w-[171.94px] leading-custom-lg text-base text-primary-white hover:bg-white rounded-lg">
+                                                onClick={(e) => {
+                                                    e.preventDefault(); 
+                                                    handleLanguageChange(option.value); 
+                                                }}
+                                                className="flex items-center gap-2 px-1 py-2 lg:text-lg max-w-[171.94px] leading-custom-lg text-base text-black hover:text-red rounded-lg"
+                                            >
+                                                <img src={option.icon} alt={`${option.label} flag`} className="size-8" />
                                                 {option.label}
                                             </a>
                                         ))}
@@ -78,24 +93,33 @@ const Header = () => {
                     <button className='lg:block hidden transition duration-300 transform hover:scale-105'><Icon className='max-w-[262px]' iconName="buyPeperuney" /></button>
                     <div className="items-center gap-[59px] lg:flex hidden">
                         <ul className='flex flex-col lg:flex-row gap-10 items-center lg:items-center z-10'>
-                            <li className="relative">
+                            <li className="relative z-[15]">
                                 <a
                                     onClick={toggleDropdown}
-                                    className="gap-3 relative text-white lg:text-2xl hover:text-black text-lg font-luckiest flex items-center space-x-1 cursor-pointer after:absolute ease-in-out duration-300"
-                                    href="#">
-                                    <img src={flagImg} alt="flag-image" />
+                                    className="gap-3 relative cursor-not-allowed text-white lg:text-2xl hover:text-black text-lg font-luckiest flex items-center space-x-1 after:absolute ease-in-out duration-300"
+                                    href="#"
+                                >
+                                    <img src={flagImg} alt="flag-image" className="w-[41px] h-[31px] cursor-not-allowed" />
                                     <span>
-                                        <Icon iconName="dropdown" />
+                                        <Icon className='cursor-pointer' iconName="dropdown" />
                                     </span>
                                     {isDropdownOpen && (
                                         <span
-                                            className="absolute w-[182px] left-0 top-3 px-2 pt-[14px] bg-red border border-white pb-2 mt-7 rounded-xl z-30"
-                                            ref={dropdownRef}>
+                                            className="absolute w-[140px] left-0 top-3 px-2 pt-[14px] pb-2 mt-7 bg-white border border-black rounded-xl z-30"
+                                            ref={dropdownRef}
+                                        >
                                             {DROPDOWN_DATA.map((option) => (
                                                 <a
+                                                    target="_blank"
                                                     key={option.id}
                                                     href={option.href}
-                                                    className="block px-1 py-2 lg:text-lg max-w-[171.94px] leading-custom-lg text-base text-primary-white hover:bg-white rounded-lg">
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        handleLanguageChange(option.value);
+                                                    }}
+                                                    className="flex items-center gap-2 px-1 py-2 lg:text-lg max-w-[171.94px] leading-custom-lg text-base text-black hover:text-red rounded-lg"
+                                                >
+                                                    <img src={option.icon} alt={`${option.label} flag`} className="size-8" />
                                                     {option.label}
                                                 </a>
                                             ))}

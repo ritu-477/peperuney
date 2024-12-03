@@ -18,6 +18,7 @@ module.exports = {
       },
 
       fontSize: {
+        'custom-xl': "22px",
         'custom-2xl': "28px",
         'custom-3xl': "32px",
         'custom-4xl': "40px",
@@ -78,6 +79,7 @@ module.exports = {
         'hero-mobile-view': "url('./assets/images/webp/hero-mobile-bg.webp')",
         'peperuney-meme': "url('./assets/images/webp/peperuney-meme-bg.webp')",
         'mobile-meme': "url('./assets/images/webp/meme-mobile-bg.webp')",
+        'pizzanomics-card-mobile': "url('./assets/images/webp/pizzanomics-card-mobile.webp')",
 
       },
 

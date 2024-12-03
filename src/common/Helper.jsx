@@ -1,7 +1,8 @@
-import Icon from '../common/Icons'
 import strakeImg from '../assets/images/webp/stake-image.webp'
 import meteoraImg from '../assets/images/webp/meteora-image.webp'
 import kreatorImg from '../assets/images/webp/kreator-ai.webp'
+import usaFlag from "../assets/images/svg/flag-image.svg"; 
+import indiaFlag from "../assets/images/webp/hindi-vector.webp"; 
 
 export const NAV_DATA_LINK = [
     { icon: 'twitter', href: "https://x.com/i/flow/login" },
@@ -10,11 +11,11 @@ export const NAV_DATA_LINK = [
 ];
 
 export const DROPDOWN_DATA = [
-    { id: 1, label: "English"},
-    { id: 2, label: "Hindi" },
+    { id: 1, icon: usaFlag, label: "English", href: "#", value: "ENG" },
+    { id: 2, icon: indiaFlag, label: "Hindi", href: "#", value: "HIN" },
 ];
         
-export const CARD_DATA_HOW = [
+export const CARD_DATA_HOW = [  
     {
         id: 1,
         title: "GET YOUR WALLET READY",

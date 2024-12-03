@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import AOS from "aos";
+import React, { useState} from "react";
 import "aos/dist/aos.css";
 import peperuney from "../assets/images/webp/peperuney-front-tv.webp";
 import block from "../assets/images/webp/block-txt.webp";
@@ -12,14 +11,6 @@ const PeperuneyToons = () => {
     const handlePlayClick = () => {
         setPlay(true);
     };
-
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            offset: 100,
-            once: true,
-        });
-    }, []);
 
     return (
         <div className="flex flex-col">
